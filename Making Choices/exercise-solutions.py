@@ -43,7 +43,7 @@ if not x:
     print(f"b. {not x}")
 
 # c. write an exression that produceds ture iff at least one of the 
-#    variables is true
+# variables is true
 if x or y:
     print(f"c. {x or y}") 
 
@@ -74,9 +74,9 @@ print(f"\nproblem 4")
 # and temperature that will produce different results for the two fragments of code
 
 # solution: the friend is right both the codes work the same way but the
-# second code is more efficient and easier to read. the first code is
-# unnecessarily complicated and hard to read. so yes the first code can
-# be written more simply as the second code.
+#           second code is more efficient and easier to read. the first code is
+#           unnecessarily complicated and hard to read. so yes the first code can
+#           be written more simply as the second code.
 
 # problem 5
 print(f"\nproblem 5")
@@ -187,7 +187,7 @@ def convert_temperature(t, source, target):
 # statements would you need to add?
 
 # solution: if we add only if statements then we would need 8 new if statements
-# but if we use elif statements then we would need only 1 new elif statement
+#           but if we use elif statements then we would need only 1 new elif statement
 
 # problem 9
 print(f"\nproblem 9")
@@ -202,9 +202,9 @@ elif ph < 3.0:
 # problem and how can you fix it?
 
 # solution: the problem is that if the first statement is true then the second
-# statement will not be checked. as elif works in a way that if the first
-# statement is false only then check the elif statement. so we can fix it by
-# changing the elif statement to if statement. corrected code: 
+#           statement will not be checked. as elif works in a way that if the first
+#           statement is false only then check the elif statement. so we can fix it by
+#           changing the elif statement to if statement. corrected code: 
 if ph < 7.0:
     print(ph ,"It's acidic!")
 if ph < 3.0: # elif changed to if
@@ -223,7 +223,7 @@ elif ph < 4.0:
 # solution: the output will be "It's acidic!"
 # b. what message are displayed when the user enters 3.6?
 # c. make a small change to one line of code so that both messages are 
-# displayed when a value less than 4 is entered
+#    displayed when a value less than 4 is entered
 # solution: change the elif statement to if statement
 
 ph = float(input("Enter the pH level: "))
@@ -239,10 +239,10 @@ if ph < 4.0: # elif changed to if
 # heavy = bmi >= 22.0, what changes would you have to make to the code?
 
 # solution: the last example checks to see whether someone is light rather
-# than heavy because the if statement is written in a way that if the first
-# condition is true then the second condition will not be checked. so if we
-# want to write the second assignment statement as heavy = bmi >= 22.0 then
-# we would have to change the if statement to elif statement. corrected code:
+#           than heavy because the if statement is written in a way that if the first
+#           condition is true then the second condition will not be checked. so if we
+#           want to write the second assignment statement as heavy = bmi >= 22.0 then
+#           we would have to change the if statement to elif statement. corrected code:
 bmi = 21.7
 if bmi < 22.0:
     print("BMI is", bmi)

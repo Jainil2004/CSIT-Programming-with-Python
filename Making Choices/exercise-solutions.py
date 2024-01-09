@@ -206,9 +206,10 @@ elif ph < 3.0:
 #           statement is false only then check the elif statement. so we can fix it by
 #           changing the elif statement to if statement. corrected code: 
 if ph < 7.0:
-    print(ph ,"It's acidic!")
-if ph < 3.0: # elif changed to if
-    print(ph, "is VERY acidic ! Be careful.")
+    if ph < 3.0: # This code block will be executed when ph < 3
+        print(ph, "is VERY acidic ! Be careful.")
+    else:
+        print(ph ,"It's acidic!") # This line will be executed when ph > 3
 
 # problem 10
 print(f"\nproblem 10")
@@ -222,6 +223,7 @@ elif ph < 4.0:
 # a. what message are displayed when the user enters 6.4?
 # solution: the output will be "It's acidic!"
 # b. what message are displayed when the user enters 3.6?
+# solution: the output will be "It's acidic!"
 # c. make a small change to one line of code so that both messages are 
 #    displayed when a value less than 4 is entered
 # solution: change the elif statement to if statement

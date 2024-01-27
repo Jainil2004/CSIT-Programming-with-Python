@@ -92,5 +92,39 @@ print(f"2.g. day on {date}/{month}/{year} is {days_name[weekday]}")
 #     """Return the avergae of num1 and num2"""
 #     return (num1+num2)/2
 # a. run exercise.py. import doctest and run doctest.testmod()
+# def average(num1: float, num2: float) -> float:
+#     """Return the average of num1 and num2
+
+#     >>> average(10, 30)
+#     15.0
+
+#     >>> average(2.5, 3.5)
+#     2.75
+#     """
+#     return (num1 + num2) / 2
+
+# if __name__ == "__main__":
+#     import doctest
+#     doctest.testmod()
+# solution: both the test fails in this code 
+
 # b. both of the tests in function average's docstring fail. Fix 
-# the code and rerun the tests. repeat this procedure until the tests pass.s
+# the code and rerun the tests. repeat this procedure until the tests pass.
+def average(num1: float, num2: float) -> float:
+    """Return the average of num1 and num2
+
+    >>> average(10, 20)
+    15.0
+
+    >>> average(2.5, 3.0)
+    2.75
+    """
+    return (num1 + num2) / 2
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
+
+# solution: this code will pass as both the tests will not encounter any issue
+
+# contributed by: Jainil Jain
